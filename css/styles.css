@@ -1,0 +1,187 @@
+/* ==========================
+    1. CSS reset [reset.css] 
+    1.1 css reset 
+    1.2 Adobe font kit 
+    1.3 Add font face/font awesome
+    2. General Rules
+        2.1 Viewport
+        2.2 Root Element 
+        2.3 variables
+            2.3.1 color palette
+            2.3.2 type settings
+        2.4 HTMl character entities
+        2.4.1 Header/nav
+    3. Side Navigation
+        3.1 Header
+            3.1.1 Mobile
+
+            3.1.2 Tablet
+            3.1.3 Screen
+
+        3.2 Navigation
+        3.3 Main
+        3.4 Footer
+
+   ========================== */
+/* 1. Imports  */
+/* 1.1 css reset */
+@import url(./reset.css);
+/* 1.2 Adobe font kit = mxh1vxy*/
+/* @import url("https://use.typekit.net/rsq2xeq.css"); */
+
+/* 1.3 Add font face/font awesome  */
+/* go https://www.fontsquirrel.com and download a font  */
+/* now go https://www.fontsquirrel.com/tools/webfont-generator to generate web font  */
+@import url(./fonts.css);
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+/* 2. General Rules*/
+
+/* 2.1 Viewport */
+viewport {
+    width: device-width;
+}
+
+/* 2.2 Root Element   */
+:root {
+    /*this is the root for all elements(nothing in front of :) */
+    font-size: 100%;
+
+}
+
+/* 2.3 Variables   */
+:root {
+    /*this is the root for all elements(nothing in front of :) */
+    /* 2.3 color palettes   */
+    --byzantium: #6b2d5cff;
+    --paradise-pink: #f0386bff;
+    --fiery-rose: #ff5376ff;
+    --pink: #f8c0c8ff;
+    --gold-crayola: #e2c290ff;
+    --red-c: rgb(155, 26, 26);
+    --dark-gray-c: #333333;
+    --med-gray-c: #666666;
+    --light-gray-c: #999999;
+    /* 2.3.2 type settings */
+    --body-fonts: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', "Open Sans", "Droid Sans", sans-serif;
+    --call2action-fonts: bold;
+    --heading-fonts: italic;
+    /* 2.3.3 settings type*/
+    font-size: 1.1rem;
+    font-feature-settings: "kern", "liga", "clig", "calt";
+}
+
+
+/* 2.4 HTML character Entities   */
+/* 2.4.1 Mobile */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: var(--heading-fonts);
+    font-style: normal;
+    text-transform: uppercase;
+
+}
+body {
+
+    font-family: var(--body-fonts);
+
+    color: var(--dark-gray-c);
+
+}
+a:link,
+a:visited {
+    font-weight: var(--fiery-rose);
+    text-decoration: none;
+    color: var(--paradise-pink);
+}
+
+a:hover,
+a:active {
+    text-decoration: underline;
+}
+@supports(font-variant-caps: all-small-caps)
+{
+    abbr{
+        font-variant-caps: all-small-caps;
+        font-feature-settings: normal;
+    }  
+   
+}
+footer{
+    letter-spacing: .01em;
+}
+
+
+
+/* 2.4.2 Tablet */
+@media only screen and (min-width:32.5em) {
+   
+}
+
+/* 3. Side Navigation */
+
+/* 3.1 Header */
+
+    /* 3.1.1 Mobile */
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+
+    /* 3.1.2 Tablet */
+    @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+      }
+
+
+/* 3.2 Navigation */
+/* 3.3 Main */
+/* 3.4 Footer */
+
