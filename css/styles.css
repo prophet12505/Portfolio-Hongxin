@@ -33,7 +33,6 @@
 /* go https://www.fontsquirrel.com and download a font  */
 /* now go https://www.fontsquirrel.com/tools/webfont-generator to generate web font  */
 @import url(./fonts.css);
-
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 /* 2. General Rules*/
 
@@ -46,7 +45,6 @@ viewport {
 :root {
     /*this is the root for all elements(nothing in front of :) */
     font-size: 100%;
-
 }
 
 /* 2.3 Variables   */
