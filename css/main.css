@@ -153,6 +153,7 @@ p img {
 	margin: 0;
 }
 p.lead {
+	
 	font-family: "lora-regular", serif;
 	font-size: 2rem;
 	line-height: 1.8;
@@ -1518,7 +1519,9 @@ header .logo a {
 	text-align: left;
 	padding-left: 13rem;
 }
-
+.col-twelve .lead{
+	text-align: left;
+}
 .about-content {
 	position: relative;
 	text-align: left;
