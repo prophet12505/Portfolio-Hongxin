@@ -1012,7 +1012,12 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .skill-bars li .percent95  { width: 95%; }
 .skill-bars li .percent100 { width: 100%; }
 
-
+.skill-labels{
+	text-decoration: none;
+}
+.skill-labels li{
+	list-style:circle;
+}
 /** 
  * ===================================================================
  * 08. common styles (_layout.scss)
@@ -1230,7 +1235,7 @@ header .logo a {
 /* dropdown nav */
 .main-navigation {
 	background: #000000;
-	padding: 24px 30px 42px;
+	padding: 24px 30px 24px;
 	margin: 0;
 	width: 100%;
 	height: auto;
