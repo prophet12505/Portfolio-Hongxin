@@ -1017,7 +1017,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	text-decoration: none;
 }
 .skill-labels li{
-	list-style:circle;
+	list-style:none;
 }
 /** 
  * ===================================================================
